@@ -7,8 +7,8 @@ function esPalindromo(cadena) {
   // PAso 3: Cambiar las letras con acento por letras sin acento
   cadena = cadena.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
   //Paso 4: Convertir string a un array
-  let newCadena = cadena.split("").reverse().join("");
-  if (cadena === newCadena) {
+  let nuevaCadena = cadena.split("").reverse().join("");
+  if (cadena === nuevaCadena) {
     resultado = true;
   } else {
     resultado = false;
